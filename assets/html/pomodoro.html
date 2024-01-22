@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="foco">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pomodoro</title>
+        <link rel="shortcut icon" href="./imagens/favicon.png" type="Globo" />
+        <link rel="stylesheet" href="../css/pomodoro.css" />
+
+        <script src="../js/pomodoro.js" defer></script>
+    </head>
+
+    <body>
+        <main class="app">
+            <section class="app__section-banner-container">
+                <h1 class="app__title">
+                    <strong class="app__title-strong"
+                        >Foca em programar, que no futuro você vai
+                        brilhar.</strong
+                    >
+                </h1>
+            </section>
+            <section class="app__section-card-container">
+                <div class="app__card">
+                    <ul class="app__card-list">
+                        <li class="app__card-list-item">
+                            <button
+                                data-contexto="programar"
+                                class="app__card-button app__card-button--programar active"
+                            >
+                                Programar
+                            </button>
+                        </li>
+                        <li class="app__card-list-item">
+                            <button
+                                data-contexto="eBook"
+                                class="app__card-button app__card-button--eBook"
+                            >
+                                eBook
+                            </button>
+                        </li>
+                        <li class="app__card-list-item">
+                            <button
+                                data-contexto="english"
+                                class="app__card-button app__card-button--english"
+                            >
+                                English
+                            </button>
+                        </li>
+                        <li class="app__card-list-item">
+                            <button
+                                data-contexto="descanso"
+                                class="app__card-button app__card-button--descanso"
+                            >
+                                Descanso
+                            </button>
+                        </li>
+                    </ul>
+                    <div id="timer" class="app__card-timer"></div>
+                    <ul class="app__card-list">
+                        <li class="app__card-list-item">
+                            <label class="toggle">
+                                <input
+                                    class="toggle-checkbox"
+                                    type="checkbox"
+                                    id="alternar-musica"
+                                />
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </li>
+                        <li class="app__card-list-item">
+                            <label
+                                class="app__card-list-label"
+                                for="alternar-musica"
+                            >
+                                Música
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="app__card-primary-button-wrapper">
+                        <button
+                            id="start-pause"
+                            class="app__card-primary-button"
+                        >
+                            <img
+                                class="app__card-primary-butto-icon"
+                                src="/imagens/play_arrow.png"
+                                alt="icon play"
+                            />
+                            <span>Começar</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
