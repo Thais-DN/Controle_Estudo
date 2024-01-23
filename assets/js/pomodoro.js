@@ -39,19 +39,19 @@ programar.addEventListener("click", () => {
 });
 
 eBook.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 1800;
+    tempoDecorridoEmSegundos = 7200;
     alterarContexto("eBook");
     eBook.classList.add("active");
 });
 
 english.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 3600;
+    tempoDecorridoEmSegundos = 7200;
     alterarContexto("english");
     english.classList.add("active");
 });
 
 descanso.addEventListener("click", () => {
-    tempoDecorridoEmSegundos = 1800;
+    tempoDecorridoEmSegundos = 3600;
     alterarContexto("descanso");
     descanso.classList.add("active");
 });

@@ -24,7 +24,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.home {
+    text-decoration: none;
+    color: #e383f0;
+    font-size: 20px;
+}
 h1 {
     font-family: "Unbounded", cursive;
 }
