@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    margin-top: 50px;
+    margin: 15vh;
     border-radius: 15px;
     border: 3px solid #ee00bb;
     padding: 15px;
@@ -44,7 +44,7 @@ body {
     margin-left: 42.6px;
     justify-content: start;
     grid-gap: 7px;
-    margin-bottom: 10px; /* Espaço entre os rótulos de mês e a grade */
+    margin-bottom: 17px; /* Espaço entre os rótulos de mês e a grade */
 }
 
 .month-label {
@@ -133,14 +133,14 @@ body {
 .div-maior {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     position: relative;
 }
 
 .description {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Ajuste conforme necessário */
+    margin: 10px 42px; /* Ajuste conforme necessário */
     font-size: 14px; /* Ajuste conforme necessário */
     color: #666; /* Ajuste conforme necessário */
 }
@@ -164,4 +164,27 @@ body {
     border-radius: 2px;
     margin: 0 2px; /* Espaçamento entre os quadrados */
     /* Não esqueça de definir as cores correspondentes para 'pouco', 'medio', 'normal', 'muito' */
+}
+
+.references {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25vh;
+}
+
+.calendario,
+.pomodoro {
+    overflow: hidden;
+}
+
+.calendario,
+.pomodoro {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.calendario:hover,
+.pomodoro:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }

@@ -65,16 +65,16 @@ function alterarContexto(contexto) {
 
     switch (contexto) {
         case "programar":
-            titulo.innerHTML = `<strong class="app__title-strong">Foca em programar, que no futuro você vai brilhar.</strong>`;
+            titulo.innerHTML = `<strong class="app__title-strong">texto 01</strong>`;
             break;
         case "eBook":
-            titulo.innerHTML = `<strong class="app__title-strong">Só parar quando puder mimar.</strong>`;
+            titulo.innerHTML = `<strong class="app__title-strong">texto 02</strong>`;
             break;
         case "english":
-            titulo.innerHTML = `<strong class="app__title-strong">Try again.</strong>`;
+            titulo.innerHTML = `<strong class="app__title-strong">texto 03</strong>`;
             break;
         case "descanso":
-            titulo.innerHTML = `<strong class="app__title-strong">Pausa para almoçar.</strong>`;
+            titulo.innerHTML = `<strong class="app__title-strong">texto 04</strong>`;
             break;
         default:
             break;
