@@ -82,10 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
                 monthLabel.style.gridColumnStart = gridColumnStart;
                 monthLabelsContainer.appendChild(monthLabel);
-
-                console.log(
-                    `Mês: ${monthLabel.textContent}, Posição da Coluna: ${gridColumnStart}`
-                );
             }
         }
     }
@@ -170,3 +166,20 @@ function ordinalSuffix(i) {
     }
     return i + "th";
 }
+
+window.addEventListener("load", (event) => {
+    const container = document.querySelector(".container");
+    const divMaior = document.querySelector(".div-maior");
+
+    container.addEventListener("scroll", () => {
+        // Verifica se o contêiner foi rolado até o fim
+        if (
+            container.scrollWidth - container.scrollLeft ===
+            container.clientWidth
+        ) {
+            divMaior.style.alignItems = "flex-end";
+        } else {
+            divMaior.style.alignItems = "flex-start";
+        }
+    });
+});
