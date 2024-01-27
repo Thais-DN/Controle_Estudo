@@ -1,73 +1,84 @@
 body {
     background-color: #d3bfd593;
 }
+
+.tudo {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 50vh;
+    width: 30%;
+}
+
 button {
-    width: 75px;
+    width: 50px;
     cursor: pointer;
     box-shadow: 0px 0px 2px gray;
     border: none;
     outline: none;
     padding: 5px;
     border-radius: 5px;
-    color: #f0daf0;
+    font-size: 15px;
+    color: #eec5ee;
+    background-color: #f884df;
 }
 #header {
-    padding: 10px;
-    color: #cf6060;
+    margin-bottom: 10px;
+    color: #ee00bb;
     font-size: 26px;
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
 }
-#header button {
-    background-color: #e383f0;
-}
-#container {
-    width: 770px;
-    margin-top: 60px;
-}
+
+#header,
 #weekdays {
     width: 100%;
-    display: flex;
+}
+
+#container {
+    max-width: 90%;
+    margin: 60px 30px;
+    padding: 10px;
+    border: 3px solid #ee00bb;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+#weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Cria 7 colunas de largura igual */
+    gap: 10px;
     color: #000000;
+    text-align: center;
 }
 #weekdays div {
-    width: 100px;
-    padding: 10px;
+    font-size: small;
 }
 #calendar {
-    width: 100%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 .day {
-    width: 100px;
-    padding: 10px;
-    height: 100px;
-    cursor: pointer;
-    box-sizing: border-box;
+    font-size: xx-small;
     background-color: #f6e2f6cc;
-    margin: 5px;
-    box-shadow: 0px 0px 3px #cbd4c2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex: 1 0 calc(100% / 7 - 10px); /* Cada dia terá uma flexibilidade e uma base calculada */
+    margin: 5px; /* Espaçamento entre os dias */
+    max-width: calc(100% / 7 - 10px);
+    min-height: 5vh;
 }
 .day:hover {
-    background-color: #e8faed;
+    background-color: #edb6e1;
 }
 
 .day + #currentDay {
-    background-color: #e8f4fa;
+    background-color: #edb6e1;
 }
 .event {
     font-size: 10px;
     padding: 3px;
-    background-color: #e383f0;
+    background-color: #f884df;
     color: #eec5ee;
     border-radius: 5px;
-    max-height: 55px;
+    max-height: 20px;
     overflow: hidden;
 }
 .padding {
@@ -75,6 +86,7 @@ button {
     background-color: #fffcff00 !important;
     box-shadow: none !important;
 }
+
 #newEventModal,
 #deleteEventModal {
     display: none;
@@ -122,4 +134,19 @@ button {
     height: 100vh;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    #container {
+        margin: 40px auto; /* Margem menor para tablets */
+        max-width: 95%; /* Largura máxima maior para usar mais espaço na tela */
+    }
+}
+
+/* Estilos para telas de celulares */
+@media (max-width: 480px) {
+    #container {
+        margin: 20px auto; /* Margem menor para celulares */
+        max-width: 100%; /* Usa toda a largura disponível na tela */
+    }
 }
