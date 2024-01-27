@@ -1,15 +1,6 @@
 body {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
     background-color: #d3bfd593;
 }
-.home {
-    text-decoration: none;
-    color: #e383f0;
-    font-size: 20px;
-}
-
 button {
     width: 75px;
     cursor: pointer;

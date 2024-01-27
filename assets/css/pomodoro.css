@@ -7,28 +7,14 @@
     --linear-botes: linear-gradient(180deg, #b872ff 0%, #b67ed8 100%);
 }
 
-* {
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
 html {
-    background: var(--main-bg-color);
-    min-height: 100vh;
     font-size: 10px;
 }
 
 body {
-    min-height: 100vh;
     background: #d3bfd593;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.home {
-    text-decoration: none;
-    color: #e383f0;
-    font-size: 20px;
-}
+
 h1 {
     font-family: "Unbounded", cursive;
 }
